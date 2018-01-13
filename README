@@ -1,0 +1,35 @@
+Author: Hai Yang Xu
+Student ID: <redacted>
+Author: John Beckingham
+Student ID: <redacted>
+
+Description:
+We re-created the classic arcade game Tetris, it has one-player and two-player
+modes.
+One-player mode is pretty much the classic Tetris game that you expect.
+X-axis of the joystick moves the block, y-axis rotates, pressing the joystick
+button drops the block faster.
+In two-player mode, two players compete to complete rows in order to send
+non-removable rows to their opponent, the player who ran out of space first
+loses.
+In two-players mode, players must wait for both Arduinos to be ready before
+starting.
+
+Components:
+1x Arduino Mega 2560 board
+1x Adafruit ILI9341 Breakout Board
+1x Joystick
+Enough wires
+
+Wiring:
+For the joystick and the display, use the same wiring instructions as
+assignment 2, they are available on <redacted>.
+The only difference is that the Arduino should be held in the position
+where the screen is on the top instead of right (check "Two Players Setup.jpg").
+For two-player mode, connect TX3 of the first Arduino to RX3 of the second,
+then TX3 of the second Arduino to RX3 of the first, and last, connect GND of
+the two Arduinos together.
+Analog pin 15 must be unconnected (for either mode).
+
+Compiling:
+Use the makefile.
